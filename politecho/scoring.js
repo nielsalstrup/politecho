@@ -72,6 +72,17 @@ news_dict["193266897438"] = uc; //Pamela Geller
 news_dict["169204449790211"] = uc; //Conservative News Today 
 news_dict["158924294183807"] = uc; //Allen West Republic 
 
+news_dict["12860228293"] = ul; //Information
+news_dict["1422187538070518"] = l; //P1
+news_dict["12860228293"] = l;// Politiken
+news_dict["61055003519"] = c;// Ekstra Bladet
+news_dict["12787473132"] = c;// Berlingske
+news_dict["63503662682"] = c; //Jyllands-Posten
+news_dict["316254565060921"] = uc;//Berlingske Business
+news_dict["201640113193991"] = uc;//Børsen
+news_dict["152904881482813"] = uc; //Den Korte Avis
+//problem: den blandet indvandring og økonomi sammen
+
 //Fake news  
 var ulf = -1;
 var lf = -.6;
@@ -124,6 +135,7 @@ fakenews_dict["140738092630206"] = ucf; //The Blaze
 fakenews_dict["319569361390023"] = ucf; //Twitchy 
 fakenews_dict["245481491808"] = ucf; //Now The End Begins 
 
+fakenews_dict["1663845600534937"] = ucf; //Newspeek Network
 //Politicians   
 var ulp = -.75;
 var lp = -.25;
@@ -167,6 +179,53 @@ pol_dict["44746457369"] = ucp; //Rick Santorum
 pol_dict["54172246106"] = ucp; //Rand Paul 
 pol_dict["6934857868"] = ucp; //Mike Huckabee 
 pol_dict["134193140910"] = ucp; //Being Conservative 
+
+pol_dict["547840621916967"] = ulp; //Pernille Skipper
+pol_dict["1122941634384463"] = ulp; //Pelle Dragsted
+pol_dict["78130643639"] = ulp; //Johanne Schmidt-Nielsen
+pol_dict["127344360615074"] = ulp; //Zenia Stampe
+pol_dict["47908701568"] = ulp; //Søren Søndergaard
+pol_dict["235501083187697/"] = ulp; //Uffe Elbæk
+pol_dict["1702345189990994"] = ulp; //Josephine Fock
+pol_dict["323452711195305"] = ulp; // Rasmus Nordqvist
+pol_dict["49348971479"] = ulp; // Pia Olsen Dyhr
+pol_dict["370360873057400"] = ulp; //Holger K. Nielsen
+pol_dict["24352982198"] = lp; // Ida Auken
+pol_dict["515338715236513"] = lp; // Trine Bramsen
+pol_dict["131559313586863"] = lp; // Morten Bødskov 
+pol_dict["350858991459"] = lp; // Christine Antorini
+pol_dict["57497067718"] = lp; //Mette Frederiksen
+pol_dict["229737453706271"] = lp; //Mogens Jensen
+pol_dict["530069377053107"] = lp; // Henrik Sass Larsen
+pol_dict["189937307565"] = lp; //Mogens Lykketoft
+pol_dict["69985338410"] = lp; //Jacob Mark
+pol_dict["591707450918919"] = lp; //Mattias Tesfaye
+pol_dict["1458354184437993"] = lp; //Nicolai Wammen
+pol_dict["447217575331947"] = lp; //Martin Lidegaard
+pol_dict["925932494102782"] = lp; //Karen Ellemann
+pol_dict["252520351444054"] = lp; //Morten Østergaard
+pol_dict["100010065213436"] = cp; //Jakob Ellemann-Jensen
+pol_dict["1438373589730446"] = cp; // Claus Hjort Frederiksen
+pol_dict["1608885519353898"] = cp; //Søren Gade
+pol_dict["404683979561081"] = cp; //Bertel Haarder
+pol_dict["240637459319900"] = cp; //Kristian Jensen
+pol_dict["490036061149758"] = cp; // Esben Lunde Larsen
+pol_dict["1489836057958537"] = cp; // Karsten Lauritzen
+pol_dict["627013744094945"] = cp; //Søren Pind 
+pol_dict["58140803787"] = cp; // Lars Løkke Rasmussen
+pol_dict["207401585966233"] = cp; //Inger Støjberg
+pol_dict["113836012012239"] = cp; //Brian Mikkelsen
+pol_dict["676080995"] = cp; // Naser Khader
+pol_dict["952334508116178"] = cp; //Søren Pape Poulsen
+pol_dict["118948271632865"] = ucp; // Henrik Dahl 
+pol_dict["100007361958071"] = ucp; // Simon Emil
+pol_dict["100005596545631"] = ucp; // Mette Bock
+pol_dict["358102574347013"] = ucp; // Kenneth Kristensen Berth
+pol_dict["33510214383"] = ucp; //Pia Kjærsgaard
+pol_dict["531761723507375"] = ucp; // Kristian Thulesen Dahl
+pol_dict["1408626239355160"] = ucp; //Søren Espersen
+pol_dict["1604502423155684"] = ucp; //Martin Henriksen
+pol_dict["691707047549076"] = ucp; //Peter Skaarup
 
 var pageToName = {
 	// news dict
@@ -231,6 +290,16 @@ var pageToName = {
 	"193266897438": "Pamela Geller",
 	"169204449790211": "Conservative News Today",
 	"158924294183807": "Allen West Republic",
+	//danske nyhedsmedier
+    "12860228293": "Information",
+	"63503662682": "Jyllands-Posten",
+    "152904881482813": "Den Korte Avis",
+    "1422187538070518": "P1",
+    "12787473132": "Berlingske",
+    "201640113193991": "Børsen",
+    "316254565060921": "Berlingske Business",
+    "12860228293": "Politiken",
+    "61055003519": "Ekstra Bladet",
 	// fake news
 	"146422995398181": "Addicting Info",
 	"177486166274": "Being Liberal",
@@ -270,6 +339,7 @@ var pageToName = {
 	"140738092630206": "The Blaze",
 	"319569361390023": "Twitchy",
 	"245481491808": "Now The End Begins",
+	"1663845600534937": "Newspeek Network",
 	// politicians
 	"6815841748": "Barack Obama",
 	"22092775577": "Michelle Obama",
@@ -302,7 +372,57 @@ var pageToName = {
 	"44746457369": "Rick Santorum",
 	"54172246106": "Rand Paul",
 	"6934857868": "Mike Huckabee",
-	"134193140910": "Being Conservative"
+	"134193140910": "Being Conservative",
+	//danske politikere
+    "547840621916967": "Pernille Skipper",
+	"447217575331947": "Martin Lidegaard",
+	"33510214383": "Pia Kjaersgaard",
+    "100007361958071": "Simon Emil Ammitzbøll",
+    "350858991459": "Christine Antorini",
+    "24352982198": "Ida Auken",
+    "358102574347013": "Kenneth Kristensen Berth",
+    "100005596545631": "Mette Bock",
+    "515338715236513": "Trine Bramsen",
+    "131559313586863": "Morten Bødskov",
+    "118948271632865": "Henrik Dahl",
+    "531761723507375": "Kristian Thulesen Dahl",
+    "1122941634384463": "Pelle Dragsted",
+    "49348971479": "Pia Olsen Dyhr",
+    "235501083187697/": "Uffe Elbæk",
+    "925932494102782": "Karen Ellemann",
+    "100010065213436": "Jakob Ellemann-Jensen",
+    "1408626239355160": "Søren Espersen",
+    "1702345189990994": "Josephine Fock",
+    "1438373589730446": "Claus Hjort Frederiksen",
+    "57497067718": "Mette Frederiksen",
+    "1608885519353898": "Søren Gade",
+    "1604502423155684": "Martin Henriksen",
+    "404683979561081": "Bertel Haarder",
+    "240637459319900": "Kristian Jensen",
+    "229737453706271": "Mogens Jensen",
+    "676080995": "Naser Khader",
+    "33510214383": "Pia Kjærsgaard",
+    "490036061149758": "Esben Lunde Larsen",
+    "530069377053107": "Henrik Sass Larsen",
+    "1489836057958537": "Karsten Lauritzen",
+    "447217575331947": "Martin Lidegaard",
+    "189937307565": "Mogens Lykketoft",
+    "69985338410": "Jacob Mark",
+    "113836012012239": "Brian Mikkelsen",
+    "370360873057400": "Holger K. Nielsen",
+    "323452711195305": "Rasmus Nordqvist",
+    "627013744094945": "Søren Pind",
+    "952334508116178": "Søren Pape Poulsen",
+    "58140803787": "Lars Løkke Rasmussen",
+    "78130643639": "Johanne Schmidt-Nielsen",
+    "547840621916967": "Pernille Skipper",
+    "691707047549076": "Peter Skaarup",
+    "127344360615074": "Zenia Stampe",
+    "207401585966233": "Inger Støjberg",
+    "47908701568": "Søren Søndergaard",
+    "591707450918919": "Mattias Tesfaye",
+    "1458354184437993": "Nicolai Wammen",
+    "252520351444054": "Morten Østergaard"
 }
 
 function score(post_ids) {
